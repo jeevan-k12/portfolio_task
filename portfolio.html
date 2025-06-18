@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>K Jeevan</h1>
+            <p class="tagline">Web Developer</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="about-container">
+            <img src="IMAGE.jpg" alt="portfolio photo" class="porfile-img" height="200"/>
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I'm Jeevan, a passionate Web developer with a love for clean and creative design. I enjoy building responsive website that provide great user experiences.Always eager to learn new technologies and improve my skills.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="project">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="portfolio.jpg" alt="Portfolio Website " >
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio with clean, modern design showcasing skills and projects. </p>
+                    <a href="#" aria-label="Visit Task Manager App project link" tabindex="0">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="task manager.jpg" alt="Task Manager" >
+                    <h3>Task Manager App </h3>
+                    <p>An intuitive web app to manage daily tasks with drag and drop, reminders, and progress tracking. </p>
+                    <a href="#" aria-label="Visit Task Manager App project link" tabindex="0">View Project</a>
+                </div>
+                <div class="project-card"> 
+                    <img src="unnamed.png" alt="weather forecast" >
+                    <h3>Weather Forecast App </h3>
+                    <p>Real-time weather forecasting web app with dynamic UI and geolocation integration.</p>
+                    <a href="#" aria-label="Visit Task Manager App project link" tabindex="0">View Project</a>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section" id="contact">
+            <div class="container" aria-labelledby="contact-heading">
+                <a href="#contact"></a>
+                <h2 id="contact-heading">Contact Me</h2>
+                <p>E-mail: <a href="mailto:jeevan@gmail.com">jeevan@gmail.com</a></p>
+                <p>Follow me on social media:
+                    <a href="#">GitHub</a> |
+                    <a href="#">LinkedIn</a> |
+                    <a href="#">Twitter</a>
+                </p>
+
+                <form class="Contact-form" >
+                    
+                    <label for="name">Name :</label>
+                    <input id="text" type="text" placeholder="Your Name"/>
+
+                    <label for="email">E-mail :</label>
+                    <input id="email" type="email" placeholder="Your E-mail"/>
+
+                    <label for="about">About :</label>
+                    <input id="about" type="text" placeholder="About"/>
+
+                    <textarea placeholder="Your Message" rows="5"></textarea>
+                    <button type="submit">Save Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 K Jeevan</p>
+        </div>
+    </footer>
+</body>
+</html> 
+
+
