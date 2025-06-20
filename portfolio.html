@@ -21,19 +21,31 @@
             </nav>
         </div>
     </header>
-
+    
     <section class="section" id="about">
         <div class="about-container">
-            <img src="IMAGE.jpg" alt="portfolio photo" class="porfile-img" height="200"/>
-            <div>
-                <h2>About Me</h2>
-                <p>Hello! I'm Jeevan, a passionate Web developer with a love for clean and creative design. I enjoy building responsive website that provide great user experiences.Always eager to learn new technologies and improve my skills.</p>
+            <div class="about-image">
+                <div class="section-title">About Me</div>       
+            </div>  
+            <div id="porfile-img">
+                <img src="IMAGE.jpg" alt="portfolio photo" style="
+                flex-shrink: 0;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow: 0 4px 15px rgba(16, 185, 129, 0.6);
+                border: 4px solid var(--primary-color);"
+                 />
+            </div>   
+            <div class="about-text">
+                <p>Hello! I'm Jeevan, a passionate Web developer with a love for clean and creative design. I enjoy building responsive website that provide great user experiences.Always eager to learn new technologies and improve my skills</p>
             </div>
         </div>
     </section>
     
     <section class="section" id="project">
-        <div class="container">
+        <div class="container"> 
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
@@ -64,11 +76,13 @@
                 <a href="#contact"></a>
                 <h2 id="contact-heading">Contact Me</h2>
                 <p>E-mail: <a href="mailto:jeevan@gmail.com">jeevan@gmail.com</a></p>
-                <p>Follow me on social media:
+                <p>Follow me on social media:</p>
+                <p class="social-links">
                     <a href="#">GitHub</a> |
                     <a href="#">LinkedIn</a> |
                     <a href="#">Twitter</a>
                 </p>
+                
 
                 <form class="Contact-form" >
                     
@@ -81,7 +95,7 @@
                     <label for="about">About :</label>
                     <input id="about" type="text" placeholder="About"/>
 
-                    <textarea placeholder="Your Message" rows="5"></textarea>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
                     <button type="submit">Save Message</button>
                 </form>
             </div>
