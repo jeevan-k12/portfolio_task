@@ -46,8 +46,9 @@
     
     <section class="section" id="project">
         <div class="container"> 
-            <h2>Projects</h2>
+            
             <div class="project-grid">
+                <h2 id="project-heading">Projects</h2>
                 <div class="project-card">
                     <img src="portfolio.jpg" alt="Portfolio Website " >
                     <h3>Portfolio Website</h3>
@@ -75,16 +76,17 @@
             <div class="container" aria-labelledby="contact-heading">
                 <a href="#contact"></a>
                 <h2 id="contact-heading">Contact Me</h2>
-                <p>E-mail: <a href="mailto:jeevan@gmail.com">jeevan@gmail.com</a></p>
-                <p>Follow me on social media:</p>
+                <hr class="divider">
+                <p>E-mail: <a href="mailto:jeevan@gmail.com" class="email-lilnk">jeevan@gmail.com</a></p>
+                <p class="social-media">Follow me on social media:</p>
                 <p class="social-links">
                     <a href="#">GitHub</a> |
                     <a href="#">LinkedIn</a> |
                     <a href="#">Twitter</a>
-                </p>
+                </p><br>
                 
 
-                <form class="Contact-form" >
+                <form class="contact-form" >
                     
                     <label for="name">Name :</label>
                     <input id="text" type="text" placeholder="Your Name"/>
@@ -94,7 +96,8 @@
 
                     <label for="about">About :</label>
                     <input id="about" type="text" placeholder="About"/>
-
+                    
+                    <label for="message">Message :</label>
                     <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
                     <button type="submit">Save Message</button>
                 </form>
